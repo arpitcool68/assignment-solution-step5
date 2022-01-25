@@ -69,7 +69,7 @@ public class NewsServiceImplTest {
         news.setUrl("//CSKVsRCB.html");
         news.setUrlToImage("//CSKVsRCB.png");
         news.setReminder(reminder);
-        news.setNewsSource(newssource);
+        news.setNewssource(newssource);
 
         newsList = new ArrayList<>();
         newsList.add(news);
