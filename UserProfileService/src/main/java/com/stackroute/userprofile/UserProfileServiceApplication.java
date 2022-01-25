@@ -24,10 +24,14 @@ public class UserProfileServiceApplication {
 	 */
 
 
-    @Bean
-    public FilterRegistrationBean<JwtFilter> jwtFilter() {
-        return null;
-    }
+	@Bean
+	public FilterRegistrationBean<JwtFilter> jwtFilter() {
+
+		final FilterRegistrationBean<JwtFilter> registrationBean = new FilterRegistrationBean<JwtFilter>();
+		registrationBean.setFilter(new JwtFilter());
+		registrationBean.addUrlPatterns("/api/*");
+		return registrationBean;
+	}
     
 	/*
 	 * 

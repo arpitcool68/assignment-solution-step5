@@ -7,4 +7,22 @@ spring:
      port: ${MONGO_PORT}
      host: ${MONGO_HOST}
 server:
- port: 8081
+ port: 8082
+ servlet:
+    context-path: /newsService
+ 
+logging:
+  level:
+    org:
+      mongodb:
+
+#spring:
+# data:
+#   mongodb:
+#     database: news
+#     port: 27017
+#     host: localhost
+#server:
+# port: 8081
+ 
+        driver: ERROR
