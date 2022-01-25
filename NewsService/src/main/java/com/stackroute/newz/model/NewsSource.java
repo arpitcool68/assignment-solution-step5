@@ -12,17 +12,17 @@ import org.springframework.data.mongodb.core.mapping.Document;
 public class NewsSource {
 
 	@Id
-	private String newsSourceId;
+	private int newsSourceId;
 	private String newsSourceName;
 	private String newsSourceDesc;
 	private String newsSourceCreatedBy;
 	private Date newsSourceCreationDate;
 
-	public String getNewsSourceId() {
+	public int getNewsSourceId() {
 		return newsSourceId;
 	}
 
-	public void setNewsSourceId(String newsSourceId) {
+	public void setNewsSourceId(int newsSourceId) {
 		this.newsSourceId = newsSourceId;
 	}
 
@@ -62,7 +62,7 @@ public class NewsSource {
 
 	}
 
-	public NewsSource(String newsSourceId, String newsSourceName, String newsSourceDesc, String newsSourceCreatedBy,
+	public NewsSource(int newsSourceId, String newsSourceName, String newsSourceDesc, String newsSourceCreatedBy,
 			Date newsSourceCreationDate) {
 		super();
 		this.newsSourceId = newsSourceId;

@@ -1,3 +1,12 @@
+#spring:
+# data:
+#   mongodb:
+#     database: news
+#     port: 27017
+#     host: mongo
+#server:
+# port: 8081
+
 spring:
  data:
    mongodb:
@@ -15,14 +24,4 @@ logging:
   level:
     org:
       mongodb:
-
-#spring:
-# data:
-#   mongodb:
-#     database: news
-#     port: 27017
-#     host: localhost
-#server:
-# port: 8081
- 
         driver: ERROR

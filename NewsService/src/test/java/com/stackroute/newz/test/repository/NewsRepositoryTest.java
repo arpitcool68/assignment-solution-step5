@@ -40,7 +40,7 @@ public class NewsRepositoryTest {
 
     	newssource = new NewsSource();
         
-        newssource.setNewsSourceId("1");
+        newssource.setNewsSourceId(1);
         newssource.setNewsSourceName("Cricket-Category");
         newssource.setNewsSourceDesc("All about IPL");
         newssource.setNewsSourceCreatedBy("Becky123");
